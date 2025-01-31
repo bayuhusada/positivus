@@ -1,10 +1,11 @@
 
+import icon from "../assets/Icon.png"
 const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between my-[70px]">
         <div className="flex items-center gap-4">
-          <img src="/src/assets/Icon.png" alt="" />
+          <img src={icon} alt="" />
           <h1 className="text-4xl font-semibold">Positivus</h1>
         </div>
         <div className="flex items-center gap-10 text-xl">
