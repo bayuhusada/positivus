@@ -1,24 +1,27 @@
+import icon from "../assets/Icon.png";
 
-import icon from "../assets/Icon.png"
 const Navbar = () => {
   return (
-    <div>
-      <div className="flex justify-between my-[70px]">
+    <nav className="container mx-auto py-5">
+      <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <img src={icon} alt="" />
+          <img src={icon} alt="Positivus Logo" className="w-12 h-12" />
           <h1 className="text-4xl font-semibold">Positivus</h1>
         </div>
+
         <div className="flex items-center gap-10 text-xl">
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Use Cases</a>
-          <a href="#">Pricing</a>
-          <a href="#">Blog</a>
-          <button className=" border border-black py-5 px-9 rounded-2xl">Request a quote</button>
+          <a href="#" className="hover:text-green transition">About Us</a>
+          <a href="#" className="hover:text-green transition">Services</a>
+          <a href="#" className="hover:text-green transition">Use Cases</a>
+          <a href="#" className="hover:text-green transition">Pricing</a>
+          <a href="#" className="hover:text-green transition">Blog</a>
+          <button className="border border-black py-3 px-6 rounded-2xl hover:bg-black hover:text-green transition">
+            Request a quote
+          </button>
         </div>
       </div>
-    </div>
-  )
-}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
