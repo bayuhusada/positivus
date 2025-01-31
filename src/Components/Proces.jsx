@@ -54,11 +54,10 @@ const Proces = () => {
         Our Working Process
       </h1>
 
-    <div className=" mt-[70px] mx-auto space-y-4">
+    <div data-aos='zoom-out-down' className=" mt-[70px] mx-auto space-y-4">
 
       {data.map((item, index) => (
         <div
-        data-aos='zoom-out-down'
           key={item.id}
           className={`border rounded-2xl p-8 shadow-[0px_10px_0px_0px_#000000] transition-all ${
             openIndex === index ? "bg-green text-dark" : "bg-white"
