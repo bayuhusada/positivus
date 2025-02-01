@@ -1,3 +1,4 @@
+import { FacebookLogo, LinkedinLogo, TwitterLogo } from '@phosphor-icons/react'
 import icon from '../assets/iconWhite.png'
 
 
@@ -32,9 +33,9 @@ const Footer = () => {
 
         <div className="flex flex-col justify-between items-center md:items-end">
           <div className="flex gap-4">
-            <a href="#" className="hover:text-green">Facebook</a>
-            <a href="#" className="hover:text-green">Twitter</a>
-            <a href="#" className="hover:text-green">LinkedIn</a>
+            <a href="#" className="hover:text-green rounded-full"><LinkedinLogo size={32} weight='fill' /></a>
+            <a href="#" className="hover:text-green"><FacebookLogo size={32} weight='fill' /></a>
+            <a href="#" className="hover:text-green"><TwitterLogo size={32} weight='fill' /></a>
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 items-center bg-darkGrey rounded-2xl px-8 py-6 mt-10 w-full md:w-auto">
