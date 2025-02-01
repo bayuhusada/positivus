@@ -13,14 +13,13 @@ import 'aos/dist/aos.css';
 const Hero = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000, // Durasi animasi
-      once: true,     // Apakah animasi hanya dijalankan sekali
+      duration: 1000, 
+      once: false,     
     });
   }, []);
 
   return (
-    <div className="px-6 py-[70px] md:px-16">
-      {/* Bagian atas */}
+    <div className="px-6 py-[70px] mt-[100px]">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div data-aos="fade-right" className="w-full md:w-[35%] text-center md:text-left">
           <h1 className="text-4xl md:text-7xl my-10 md:my-20 font-normal">
@@ -35,7 +34,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Bagian logo perusahaan */}
       <div data-aos="fade-up" className="py-[70px] grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-8 items-center">
         <img className="grayscale max-w-full" src={Amazon} alt="Amazon" />
         <img className="grayscale max-w-full" src={Hubspot} alt="Hubspot" />
